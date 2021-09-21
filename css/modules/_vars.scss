@@ -1,0 +1,41 @@
+// MEDIA
+@mixin point($width) {
+    @media only screen and (max-width: $width + 'px') {
+        @content;
+    }
+}
+@mixin point-min($width) {
+    @media only screen and (min-width: $width + 'px') {
+        @content;
+    }
+}
+// COLOR
+$dark: #333333;
+$wh: #ffffff;
+// ANIMATE
+$trs: .2s linear;
+// BTN
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: $dark;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: $wh;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    outline: none;
+    border: .1rem solid $wh;
+    cursor: pointer;
+    transition: $trs;
+    @include point(768) {
+        font-size: 1.4rem;
+    }
+    @include point(500) {
+        font-size: 1.2rem;
+    }
+    &:hover {
+        background: transparent;
+        letter-spacing: .4rem;
+    }
+}

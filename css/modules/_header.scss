@@ -1,0 +1,133 @@
+.header {
+    padding: 2.5rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    @include point(500) {
+        padding: 1rem 0;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include point(950) {
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+        @include point(500) {
+            flex-direction: row-reverse;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            column-gap: 4rem;
+            font-weight: 300;
+            @include point(950) {
+                order: 2;
+            }
+            @include point(500) {
+                display: none;
+            }
+            li {
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                    &:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &_logo {
+            width: 21.6rem;
+            @include point(950) {
+                width: 15rem;
+                order: 1;
+            }
+            @include point(500) {
+                width: 10rem;
+            }
+        }
+    }
+    &--search {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url('../img/search.svg') left / cover no-repeat;
+            position: absolute;
+            left: -4rem;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+    }
+    &__btn {
+        display: none;
+        @include point(500) {
+            display: block;
+            position: relative;
+            width: 4rem;
+            height: 2rem;
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            span {
+                width: 100%;
+                height: 0.1rem;
+                background: $wh;
+                position: absolute;
+                left: 0;
+                pointer-events: none;
+                transition: $trs;
+                &:nth-child(1) {
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                }
+                &:nth-child(3) {
+                    top: 100%;
+                }
+            }
+            &:hover {
+                span {
+                    &:nth-child(1) {
+                        top: 10%;
+                        left: -10%;
+                    }
+                    &:nth-child(3) {
+                        top: 90%;
+                        left: 10%;
+                    }
+                }
+            }
+            &.active {
+                span {
+                    &:nth-child(1) {
+                        top: 50%;
+                        left: 0%;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                       opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        top: 50%;
+                        left: 0;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}

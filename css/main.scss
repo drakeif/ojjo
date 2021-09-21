@@ -1,0 +1,42 @@
+@import 'modules/fonts';
+@import 'modules/vars';
+// CORRECT
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: $wh;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+h1 {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.container {
+    max-width: 114rem;
+    width: 100%;
+    min-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+// MODULES
+@import 'modules/header';
+@import 'modules/intro';
