@@ -19,6 +19,9 @@ body {
     font-size: 1.4rem;
     line-height: 1.2;
     color: $wh;
+    &.active {
+        overflow: hidden;
+    }
 }
 img {
     display: inline-block;
