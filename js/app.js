@@ -1,5 +1,15 @@
-const btn = document.querySelector('.header__btn');
+const btn = document.querySelector('.header__btn'),
+      menu = document.querySelector('.menu'),
+      closeMenu = document.querySelectorAll('.menu__nav');
 
 btn.addEventListener('click', (e) => {
-    btn.classList.toggle('active');
+    e.target.classList.toggle('active');
+    menu.classList.toggle('active');
 });
+
+closeMenu.forEach(el => el.addEventListener('click', () => {
+    btn.classList.remove('active');
+    menu.classList.remove('active');
+}));
+
+
