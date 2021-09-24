@@ -173,6 +173,14 @@ h1 {
   font-size: 4rem;
   font-weight: 700; }
 
+h2 {
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 3rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 2.4rem; } }
+
 .container {
   max-width: 114rem;
   width: 100%;
@@ -209,7 +217,7 @@ h1 {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        row-gap: 2rem; } }
+        row-gap: .5rem; } }
     @media only screen and (max-width: 500px) {
       .header__nav {
         -webkit-box-orient: horizontal;
@@ -249,7 +257,8 @@ h1 {
           width: 15rem;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
-                  order: 1; } }
+                  order: 1;
+          margin-bottom: 2rem; } }
       @media only screen and (max-width: 500px) {
         .header__nav_logo {
           width: 10rem; } }
@@ -404,5 +413,241 @@ h1 {
       @media only screen and (max-width: 768px) {
         .intro__footer_block:nth-child(odd) {
           display: none; } }
+
+.goods {
+  padding: 10rem 0;
+  color: #333333; }
+  @media only screen and (max-width: 768px) {
+    .goods {
+      padding: 6rem 0; } }
+  @media only screen and (max-width: 500px) {
+    .goods {
+      padding: 3rem 0; } }
+  .goods__title {
+    text-align: center;
+    margin-bottom: 6rem; }
+    @media only screen and (max-width: 768px) {
+      .goods__title {
+        margin-bottom: 3rem; } }
+    .goods__title h3 {
+      font-size: 2.1rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 768px) {
+        .goods__title h3 {
+          font-size: 1.6rem;
+          margin-bottom: .5rem; } }
+  .goods__items {
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    grid-template-rows: repeat(2, 28rem);
+    gap: 3rem; }
+    @media only screen and (max-width: 1150px) {
+      .goods__items {
+        grid-template-columns: repeat(2, 35rem);
+        grid-template-rows: repeat(3, 28rem);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    @media only screen and (max-width: 768px) {
+      .goods__items {
+        grid-template-columns: repeat(1, 35rem);
+        grid-template-rows: repeat(6, 28rem);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 1rem; } }
+    @media only screen and (max-width: 500px) {
+      .goods__items {
+        grid-template-columns: repeat(1, 32rem); } }
+  .goods__item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; }
+    .goods__item h3 {
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .goods__item.wedding:nth-child(1) {
+      background: url("../../img/wedding/rings.jpg"); }
+    .goods__item.wedding:nth-child(2) {
+      background: url("../../img/wedding/ears.jpg"); }
+    .goods__item.wedding:nth-child(3) {
+      background: url("../../img/wedding/neck.jpg"); }
+    .goods__item.wedding:nth-child(4) {
+      background: url("../../img/wedding/ring.jpg"); }
+    .goods__item.wedding:nth-child(5) {
+      background: url("../../img/wedding/bracelet.jpg"); }
+    .goods__item.wedding:nth-child(6) {
+      background: url("../../img/wedding/watch.jpg"); }
+    .goods__item.wedding:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+      background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .goods__item.husband:nth-child(1) {
+      background: url("../../img/wedding/rings.jpg"); }
+    .goods__item.husband:nth-child(2) {
+      background: url("../../img/wedding/ears.jpg"); }
+    .goods__item.husband:nth-child(3) {
+      background: url("../../img/wedding/neck.jpg"); }
+    .goods__item.husband:nth-child(4) {
+      background: url("../../img/wedding/ring.jpg"); }
+    .goods__item.husband:nth-child(5) {
+      background: url("../../img/wedding/bracelet.jpg"); }
+    .goods__item.husband:nth-child(6) {
+      background: url("../../img/wedding/watch.jpg"); }
+    .goods__item.husband:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+      background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .goods__item.wife:nth-child(1) {
+      background: url("../../img/wedding/rings.jpg"); }
+    .goods__item.wife:nth-child(2) {
+      background: url("../../img/wedding/ears.jpg"); }
+    .goods__item.wife:nth-child(3) {
+      background: url("../../img/wedding/neck.jpg"); }
+    .goods__item.wife:nth-child(4) {
+      background: url("../../img/wedding/ring.jpg"); }
+    .goods__item.wife:nth-child(5) {
+      background: url("../../img/wedding/bracelet.jpg"); }
+    .goods__item.wife:nth-child(6) {
+      background: url("../../img/wedding/watch.jpg"); }
+    .goods__item.wife:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+      background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .goods__item.rare:nth-child(1) {
+      background: url("../../img/wedding/rings.jpg"); }
+    .goods__item.rare:nth-child(2) {
+      background: url("../../img/wedding/ears.jpg"); }
+    .goods__item.rare:nth-child(3) {
+      background: url("../../img/wedding/neck.jpg"); }
+    .goods__item.rare:nth-child(4) {
+      background: url("../../img/wedding/ring.jpg"); }
+    .goods__item.rare:nth-child(5) {
+      background: url("../../img/wedding/bracelet.jpg"); }
+    .goods__item.rare:nth-child(6) {
+      background: url("../../img/wedding/watch.jpg"); }
+    .goods__item.rare:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+      background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .goods__item.collection:nth-child(1) {
+      background: url("../../img/wedding/rings.jpg"); }
+    .goods__item.collection:nth-child(2) {
+      background: url("../../img/wedding/ears.jpg"); }
+    .goods__item.collection:nth-child(3) {
+      background: url("../../img/wedding/neck.jpg"); }
+    .goods__item.collection:nth-child(4) {
+      background: url("../../img/wedding/ring.jpg"); }
+    .goods__item.collection:nth-child(5) {
+      background: url("../../img/wedding/bracelet.jpg"); }
+    .goods__item.collection:nth-child(6) {
+      background: url("../../img/wedding/watch.jpg"); }
+    .goods__item.collection:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+      background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+.tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 950px) {
+    .tabs__nav {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      row-gap: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .tabs__nav {
+      row-gap: 1rem;
+      margin-bottom: 3rem; } }
+
+.tabs__item {
+  display: none; }
+
+.tabs__item.active {
+  display: block; }
+
+.tabs__nav-btn {
+  width: 165px;
+  height: 61px;
+  font-size: 1.8rem;
+  border: 1px solid #333333;
+  outline: none;
+  background: transparent;
+  color: #333333;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear; }
+  .tabs__nav-btn:hover {
+    background: #333333;
+    color: #ffffff; }
+  @media only screen and (max-width: 768px) {
+    .tabs__nav-btn {
+      width: 120px;
+      height: 40px;
+      font-size: 1.4rem; } }
+
+.tabs__nav-btn.active {
+  background: #333333;
+  color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

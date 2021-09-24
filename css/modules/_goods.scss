@@ -1,0 +1,268 @@
+.goods {
+    padding: 10rem 0;
+    color: $dark;
+    @include point(768) {
+        padding: 6rem 0;
+    }
+    @include point(500) {
+        padding: 3rem 0;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+        @include point(768) {
+            margin-bottom: 3rem;
+        }
+        h3 {
+            font-size: 2.1rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            @include point(768) {
+                font-size: 1.6rem;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 35rem);
+        grid-template-rows: repeat(2, 28rem);
+        gap: 3rem;
+        @include point(1150) {
+            grid-template-columns: repeat(2, 35rem);
+            grid-template-rows: repeat(3, 28rem);
+            justify-content: center;
+        }
+        @include point(768) {
+            grid-template-columns: repeat(1, 35rem);
+            grid-template-rows: repeat(6, 28rem);
+            justify-content: center;
+            gap: 1rem;
+        }
+        @include point(500) {
+            grid-template-columns: repeat(1, 32rem);
+        }
+    }
+    &__item {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        h3 {
+            color: $wh;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.wedding {
+            &:nth-child(1) {
+                background: url('../../img/wedding/rings.jpg');
+            }
+            &:nth-child(2) {
+                background: url('../../img/wedding/ears.jpg');
+            }
+            &:nth-child(3) {
+                background: url('../../img/wedding/neck.jpg');
+            }
+            &:nth-child(4) {
+                background: url('../../img/wedding/ring.jpg');
+            }
+            &:nth-child(5) {
+                background: url('../../img/wedding/bracelet.jpg');
+            }
+            &:nth-child(6) {
+                background: url('../../img/wedding/watch.jpg');
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba($silver, .1), rgba($dark, .5));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &.husband {
+            &:nth-child(1) {
+                background: url('../../img/wedding/rings.jpg');
+            }
+            &:nth-child(2) {
+                background: url('../../img/wedding/ears.jpg');
+            }
+            &:nth-child(3) {
+                background: url('../../img/wedding/neck.jpg');
+            }
+            &:nth-child(4) {
+                background: url('../../img/wedding/ring.jpg');
+            }
+            &:nth-child(5) {
+                background: url('../../img/wedding/bracelet.jpg');
+            }
+            &:nth-child(6) {
+                background: url('../../img/wedding/watch.jpg');
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba($silver, .1), rgba($dark, .5));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &.wife {
+            &:nth-child(1) {
+                background: url('../../img/wedding/rings.jpg');
+            }
+            &:nth-child(2) {
+                background: url('../../img/wedding/ears.jpg');
+            }
+            &:nth-child(3) {
+                background: url('../../img/wedding/neck.jpg');
+            }
+            &:nth-child(4) {
+                background: url('../../img/wedding/ring.jpg');
+            }
+            &:nth-child(5) {
+                background: url('../../img/wedding/bracelet.jpg');
+            }
+            &:nth-child(6) {
+                background: url('../../img/wedding/watch.jpg');
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba($silver, .1), rgba($dark, .5));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &.rare {
+            &:nth-child(1) {
+                background: url('../../img/wedding/rings.jpg');
+            }
+            &:nth-child(2) {
+                background: url('../../img/wedding/ears.jpg');
+            }
+            &:nth-child(3) {
+                background: url('../../img/wedding/neck.jpg');
+            }
+            &:nth-child(4) {
+                background: url('../../img/wedding/ring.jpg');
+            }
+            &:nth-child(5) {
+                background: url('../../img/wedding/bracelet.jpg');
+            }
+            &:nth-child(6) {
+                background: url('../../img/wedding/watch.jpg');
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba($silver, .1), rgba($dark, .5));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &.collection {
+            &:nth-child(1) {
+                background: url('../../img/wedding/rings.jpg');
+            }
+            &:nth-child(2) {
+                background: url('../../img/wedding/ears.jpg');
+            }
+            &:nth-child(3) {
+                background: url('../../img/wedding/neck.jpg');
+            }
+            &:nth-child(4) {
+                background: url('../../img/wedding/ring.jpg');
+            }
+            &:nth-child(5) {
+                background: url('../../img/wedding/bracelet.jpg');
+            }
+            &:nth-child(6) {
+                background: url('../../img/wedding/watch.jpg');
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba($silver, .1), rgba($dark, .5));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+.tabs__nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin-bottom: 5rem;
+    @include point(950) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    @include point(768) {
+        row-gap: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+.tabs__item {
+    display: none;
+}
+.tabs__item.active {
+    display: block;
+}
+.tabs__nav-btn {
+    width: 165px;
+    height: 61px;
+    font-size: 1.8rem;
+    border: 1px solid $dark;
+    outline: none;
+    background: transparent;
+    color: $dark;
+    cursor: pointer;
+    transition: $trs;
+    &:hover {
+        background: $dark;
+        color: $wh;
+    }
+    @include point(768) {
+        width: 120px;
+        height: 40px;
+        font-size: 1.4rem; 
+    }
+}
+.tabs__nav-btn.active {
+    background: $dark;
+    color: $wh;
+}
