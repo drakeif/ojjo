@@ -477,17 +477,17 @@ h2 {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
     .goods__item.wedding:nth-child(1) {
-      background: url("../../img/wedding/rings.jpg"); }
+      background: url("../img/wedding/rings.jpg"); }
     .goods__item.wedding:nth-child(2) {
-      background: url("../../img/wedding/ears.jpg"); }
+      background: url("../img/wedding/ears.jpg"); }
     .goods__item.wedding:nth-child(3) {
-      background: url("../../img/wedding/neck.jpg"); }
+      background: url("../img/wedding/neck.jpg"); }
     .goods__item.wedding:nth-child(4) {
-      background: url("../../img/wedding/ring.jpg"); }
+      background: url("../img/wedding/ring.jpg"); }
     .goods__item.wedding:nth-child(5) {
-      background: url("../../img/wedding/bracelet.jpg"); }
+      background: url("../img/wedding/bracelet.jpg"); }
     .goods__item.wedding:nth-child(6) {
-      background: url("../../img/wedding/watch.jpg"); }
+      background: url("../img/wedding/watch.jpg"); }
     .goods__item.wedding:before {
       content: '';
       display: block;
@@ -501,17 +501,17 @@ h2 {
       right: 0;
       bottom: 0; }
     .goods__item.husband:nth-child(1) {
-      background: url("../../img/wedding/rings.jpg"); }
+      background: url("../img/wedding/rings.jpg"); }
     .goods__item.husband:nth-child(2) {
-      background: url("../../img/wedding/ears.jpg"); }
+      background: url("../img/wedding/ears.jpg"); }
     .goods__item.husband:nth-child(3) {
-      background: url("../../img/wedding/neck.jpg"); }
+      background: url("../img/wedding/neck.jpg"); }
     .goods__item.husband:nth-child(4) {
-      background: url("../../img/wedding/ring.jpg"); }
+      background: url("../img/wedding/ring.jpg"); }
     .goods__item.husband:nth-child(5) {
-      background: url("../../img/wedding/bracelet.jpg"); }
+      background: url("../img/wedding/bracelet.jpg"); }
     .goods__item.husband:nth-child(6) {
-      background: url("../../img/wedding/watch.jpg"); }
+      background: url("../img/wedding/watch.jpg"); }
     .goods__item.husband:before {
       content: '';
       display: block;
@@ -525,17 +525,17 @@ h2 {
       right: 0;
       bottom: 0; }
     .goods__item.wife:nth-child(1) {
-      background: url("../../img/wedding/rings.jpg"); }
+      background: url("../img/wedding/rings.jpg"); }
     .goods__item.wife:nth-child(2) {
-      background: url("../../img/wedding/ears.jpg"); }
+      background: url("../img/wedding/ears.jpg"); }
     .goods__item.wife:nth-child(3) {
-      background: url("../../img/wedding/neck.jpg"); }
+      background: url("../img/wedding/neck.jpg"); }
     .goods__item.wife:nth-child(4) {
-      background: url("../../img/wedding/ring.jpg"); }
+      background: url("../img/wedding/ring.jpg"); }
     .goods__item.wife:nth-child(5) {
-      background: url("../../img/wedding/bracelet.jpg"); }
+      background: url("../img/wedding/bracelet.jpg"); }
     .goods__item.wife:nth-child(6) {
-      background: url("../../img/wedding/watch.jpg"); }
+      background: url("../img/wedding/watch.jpg"); }
     .goods__item.wife:before {
       content: '';
       display: block;
@@ -549,17 +549,17 @@ h2 {
       right: 0;
       bottom: 0; }
     .goods__item.rare:nth-child(1) {
-      background: url("../../img/wedding/rings.jpg"); }
+      background: url("../img/wedding/rings.jpg"); }
     .goods__item.rare:nth-child(2) {
-      background: url("../../img/wedding/ears.jpg"); }
+      background: url("../img/wedding/ears.jpg"); }
     .goods__item.rare:nth-child(3) {
-      background: url("../../img/wedding/neck.jpg"); }
+      background: url("../img/wedding/neck.jpg"); }
     .goods__item.rare:nth-child(4) {
-      background: url("../../img/wedding/ring.jpg"); }
+      background: url("../img/wedding/ring.jpg"); }
     .goods__item.rare:nth-child(5) {
-      background: url("../../img/wedding/bracelet.jpg"); }
+      background: url("../img/wedding/bracelet.jpg"); }
     .goods__item.rare:nth-child(6) {
-      background: url("../../img/wedding/watch.jpg"); }
+      background: url("../img/wedding/watch.jpg"); }
     .goods__item.rare:before {
       content: '';
       display: block;
@@ -573,17 +573,17 @@ h2 {
       right: 0;
       bottom: 0; }
     .goods__item.collection:nth-child(1) {
-      background: url("../../img/wedding/rings.jpg"); }
+      background: url("../img/wedding/rings.jpg"); }
     .goods__item.collection:nth-child(2) {
-      background: url("../../img/wedding/ears.jpg"); }
+      background: url("../img/wedding/ears.jpg"); }
     .goods__item.collection:nth-child(3) {
-      background: url("../../img/wedding/neck.jpg"); }
+      background: url("../img/wedding/neck.jpg"); }
     .goods__item.collection:nth-child(4) {
-      background: url("../../img/wedding/ring.jpg"); }
+      background: url("../img/wedding/ring.jpg"); }
     .goods__item.collection:nth-child(5) {
-      background: url("../../img/wedding/bracelet.jpg"); }
+      background: url("../img/wedding/bracelet.jpg"); }
     .goods__item.collection:nth-child(6) {
-      background: url("../../img/wedding/watch.jpg"); }
+      background: url("../img/wedding/watch.jpg"); }
     .goods__item.collection:before {
       content: '';
       display: block;
