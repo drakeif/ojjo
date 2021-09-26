@@ -39,4 +39,15 @@ $trs: .2s linear;
         background: transparent;
         letter-spacing: .4rem;
     }
+    &.btn--wh {
+        background: $wh;
+        color: $dark;
+        border: .1rem solid $dark;
+    }
+}
+// BG
+@mixin bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -44,9 +44,6 @@
         }
     }
     &__item {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         position: relative;
         h3 {
             color: $wh;
@@ -93,22 +90,28 @@
         }
         &.husband {
             &:nth-child(1) {
-                background: url('../img/wedding/rings.jpg');
+                background: url('../img/husband/suit.jpg');
+                @include bg;
             }
             &:nth-child(2) {
-                background: url('../img/wedding/ears.jpg');
+                background: url('../img/husband/hat.jpeg');
+                @include bg;
             }
             &:nth-child(3) {
-                background: url('../img/wedding/neck.jpg');
+                background: url('../img/husband/pants.jpg');
+                @include bg;
             }
             &:nth-child(4) {
-                background: url('../img/wedding/ring.jpg');
+                background: url('../img/husband/1.jpg');
+                @include bg;
             }
             &:nth-child(5) {
-                background: url('../img/wedding/bracelet.jpg');
+                background: url('../img/husband/tie.jpg');
+                @include bg;
             }
             &:nth-child(6) {
-                background: url('../img/wedding/watch.jpg');
+                background: url('../img/husband/shoes.jpg');
+                @include bg;
             }
             &:before {
                 content: '';
@@ -125,22 +128,28 @@
         }
         &.wife {
             &:nth-child(1) {
-                background: url('../img/wedding/rings.jpg');
+                background: url('../img/wife/dress.jpg');
+                @include bg;
             }
             &:nth-child(2) {
-                background: url('../img/wedding/ears.jpg');
+                background: url('../img/wife/top.jpg');
+                @include bg;
             }
             &:nth-child(3) {
-                background: url('../img/wedding/neck.jpg');
+                background: url('../img/wife/skirt.jpg');
+                @include bg;
             }
             &:nth-child(4) {
-                background: url('../img/wedding/ring.jpg');
+                background: url('../img/wife/hat.jpg');
+                @include bg;
             }
             &:nth-child(5) {
-                background: url('../img/wedding/bracelet.jpg');
+                background: url('../img/wife/underwear.jpg');
+                @include bg;
             }
             &:nth-child(6) {
-                background: url('../img/wedding/watch.jpg');
+                background: url('../img/wife/bags.jpg');
+                @include bg;
             }
             &:before {
                 content: '';
@@ -157,22 +166,28 @@
         }
         &.rare {
             &:nth-child(1) {
-                background: url('../img/wedding/rings.jpg');
+                background: url('../img/rare/vaza.jpg');
+                @include bg;
             }
             &:nth-child(2) {
-                background: url('../img/wedding/ears.jpg');
+                background: url('../img/rare/guns.jpeg');
+                @include bg;
             }
             &:nth-child(3) {
-                background: url('../img/wedding/neck.jpg');
+                background: url('../img/rare/print.jpeg');
+                @include bg;
             }
             &:nth-child(4) {
-                background: url('../img/wedding/ring.jpg');
+                background: url('../img/rare/xz.jpeg');
+                @include bg;
             }
             &:nth-child(5) {
-                background: url('../img/wedding/bracelet.jpg');
+                background: url('../img/rare/coins.png');
+                @include bg;
             }
             &:nth-child(6) {
-                background: url('../img/wedding/watch.jpg');
+                background: url('../img/rare/diamond.jpg');
+                @include bg;
             }
             &:before {
                 content: '';
@@ -189,22 +204,28 @@
         }
         &.collection {
             &:nth-child(1) {
-                background: url('../img/wedding/rings.jpg');
+                background: url('../img/collection/1.jpg');
+                @include bg;
             }
             &:nth-child(2) {
-                background: url('../img/wedding/ears.jpg');
+                background: url('../img/collection/2.jpg');
+                @include bg;
             }
             &:nth-child(3) {
-                background: url('../img/wedding/neck.jpg');
+                background: url('../img/collection/3.jpg');
+                @include bg;
             }
             &:nth-child(4) {
-                background: url('../img/wedding/ring.jpg');
+                background: url('../img/collection/4.jpg');
+                @include bg;
             }
             &:nth-child(5) {
-                background: url('../img/wedding/bracelet.jpg');
+                background: url('../img/collection/5.jpeg');
+                @include bg;
             }
             &:nth-child(6) {
-                background: url('../img/wedding/watch.jpg');
+                background: url('../img/collection/6.jpg');
+                @include bg;
             }
             &:before {
                 content: '';
