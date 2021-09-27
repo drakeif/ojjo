@@ -38,4 +38,19 @@ const tabsItems = document.querySelectorAll('.tabs__item');
         });
     });
         
-    document.querySelector('.tabs__nav-btn:nth-child(1)').click();
+    document.querySelector('.tabs__nav-btn:nth-child(3)').click();
+
+// WAYPOINT
+let waypoint = new Waypoint({
+    element: document.getElementById('goods'),
+    handler: function(direction) {
+      let header = document.getElementById('header');
+      if(direction === 'down') {
+        header.classList.add('active');
+        document.querySelector('.header__nav_logo').classList.add('active');
+      } else {
+        header.classList.remove('active');
+        document.querySelector('.header__nav_logo').classList.remove('active');
+      }
+    }
+  });

@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body id="body">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="header__nav">
                 <ul>
-                    <li><a href="#!">Контрагентам</a></li>
-                    <li><a href="#!">Дизайнерам</a></li>
-                    <li><a href="#!">Вакансії</a></li>
+                    <li><a href="#goods">Контрагентам</a></li>
+                    <li><a href="#our">Дизайнерам</a></li>
+                    <li><a href="#blog">Вакансії</a></li>
                 </ul>
                 <img class="header__nav_logo" src="./img/logo.svg" alt="logo">
                 <ul>
                     <li class="header--search"><a href="#!">Пошук</a></li>
                     <li><a href="#!">Вхід/Реєстрація</a></li>
                     <li>
-                        <a href="#!"><img src="./img/account.svg" alt="account"></a>
+                        <a href="#intro"><img src="./img/account.svg" alt="account"></a>
                         <a href="#!"><img src="./img/like.svg" alt="like"></a>
                     </li>
                 </ul>
@@ -34,7 +34,7 @@
             </nav>
         </div>
     </header>
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro__wrapper">
             <div class="intro__content">
                 <h1>Довго, дорого, багато!</h1>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="goods">
+    <section class="goods" id="goods">
         <div class="container">
             <div class="goods__wrapper">
                 <div class="goods__title">
@@ -183,7 +183,7 @@
             </div>
         </div>
     </section>
-    <div class="our">
+    <div class="our" id="our">
         <div class="container">
             <div class="our__wrapper">
                 <h3>Не знаєш, що вибрати?</h3>
@@ -193,21 +193,44 @@
             </div>
         </div>
     </div>
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="blog__wrapper">
+                <div class="blog__title">
+                    <h3>Корисні статті</h3>
+                    <h2>Найкращі поради для вибіру дорогих подарунків</h2>
+                </div>
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <h3>Як вибрати годинник?</h3>
+                    </div>
+                    <div class="blog__item">
+                        <h3>Запонки для чоловіка</h3>
+                    </div>
+                    <div class="blog__item">
+                        <h3>Обручальні кільця</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="menu">
         <div class="menu__wrapper">
             <nav class="menu__nav">
-                <a href="#!">Контрагентам</a>
-                <a href="#!">Дизайнерам</a>
-                <a href="#!">Вакансії</a>
+                <a href="#goods">Контрагентам</a>
+                <a href="#our">Дизайнерам</a>
+                <a href="#blog">Вакансії</a>
                 <a href="#!">Пошук</a>
                 <a href="#!">Вхід/Реєстрація</a>
                 <div class="menu__nav_account">
-                    <a href="#!"><img src="./img/account.svg" alt="account"></a>
+                    <a href="#intro"><img src="./img/account.svg" alt="account"></a>
                     <a href="#!"><img src="./img/like.svg" alt="like"></a>
                 </div>
             </nav>
         </div>
     </div>
+
+    <script src="./js/waypoints.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

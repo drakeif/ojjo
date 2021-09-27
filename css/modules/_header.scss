@@ -55,7 +55,11 @@
                 margin-bottom: 2rem;
             }
             @include point(500) {
-                width: 10rem;
+                width: 12rem;
+                margin-bottom: 0;
+            }
+            &.active {
+                width: 12rem;
             }
         }
     }
@@ -120,5 +124,23 @@
                 }
             }
         }
+    }
+    &.active {
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: $dark;
+        animation: menu-down .5s ease-out;
+    }
+}
+@keyframes menu-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
