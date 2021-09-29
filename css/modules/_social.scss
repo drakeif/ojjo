@@ -1,0 +1,131 @@
+.social {
+    color: $dark;
+    padding-bottom: 12rem;
+    @include point(768) {
+        padding-bottom: 6rem;
+    }
+    @include point(500) {
+        padding-bottom: 3rem;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+        h3 {
+            font-size: 2.1rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            @include point(768) {
+                font-size: 1.8rem;
+            }
+            @include point(500) {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+        }
+        @include point(768) {
+            margin-bottom: 4rem;
+        }
+        @include point(500) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 30rem);
+        @include point(768) {
+            grid-template-rows: repeat(4, 30rem);
+        }
+        @include point(600) {
+            grid-template-rows: repeat(4, 20rem)
+        }
+        @include point(400) {
+            grid-template-rows: repeat(4, 15rem)
+        }
+    }
+    &__item {
+        position: relative;
+        &:nth-child(1) {
+            grid-column: span 2;
+            background-image: url('../../img/social/v-1.jpg');
+            @include point(768) {
+                grid-column: span 4;
+            }
+            &:hover {
+                .social__item_video {
+                    display: grid;
+                }
+            }
+        }
+        &:nth-child(2) {
+            grid-column: span 1;
+            background-image: url('../../img/social/1.jpg');
+            @include point(768) {
+                grid-column: span 2
+            }
+        }
+        &:nth-child(3) {
+            grid-column: span 1;
+            background-image: url('../../img/social/2.jpg');
+            @include point(768) {
+                grid-column: span 2;
+            }
+        }
+        &:nth-child(4) {
+            grid-column: span 1;
+            background-image: url('../../img/social/3.jpg');
+            @include point(768) {
+                grid-column: span 2;
+            }
+        }
+        &:nth-child(5) {
+            grid-column: span 1;
+            background-image: url('../../img/social/4.jpg');
+            @include point(768) {
+                grid-column: span 2;
+            }
+        }
+        &:nth-child(6) {
+            grid-column: span 2;
+            background-image: url('../../img/social/v-2.jpg');
+            @include point(768) {
+                grid-column: span 4;
+            }
+            &:hover {
+                .social__item_video {
+                    display: grid;
+                }
+            }
+        }
+        @include bg;
+        &_video {
+            display: none;
+            place-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            animation: show-btn .3s linear ;
+            @include grad;
+            button {
+                position: relative;
+                z-index: 10;
+                border: none;
+                outline: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@keyframes show-btn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

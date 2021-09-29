@@ -898,4 +898,135 @@ h2 {
         width: 30rem;
         height: 32rem; } }
 
+.social {
+  color: #333333;
+  padding-bottom: 12rem; }
+  @media only screen and (max-width: 768px) {
+    .social {
+      padding-bottom: 6rem; } }
+  @media only screen and (max-width: 500px) {
+    .social {
+      padding-bottom: 3rem; } }
+  .social__title {
+    text-align: center;
+    margin-bottom: 6rem; }
+    .social__title h3 {
+      font-size: 2.1rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 768px) {
+        .social__title h3 {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 500px) {
+        .social__title h3 {
+          font-size: 1.4rem;
+          margin-bottom: 1rem; } }
+    @media only screen and (max-width: 768px) {
+      .social__title {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 500px) {
+      .social__title {
+        margin-bottom: 2rem; } }
+  .social__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem); }
+    @media only screen and (max-width: 768px) {
+      .social__grid {
+        grid-template-rows: repeat(4, 30rem); } }
+    @media only screen and (max-width: 600px) {
+      .social__grid {
+        grid-template-rows: repeat(4, 20rem); } }
+    @media only screen and (max-width: 400px) {
+      .social__grid {
+        grid-template-rows: repeat(4, 15rem); } }
+  .social__item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .social__item:nth-child(1) {
+      grid-column: span 2;
+      background-image: url("../../img/social/v-1.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(1) {
+          grid-column: span 4; } }
+      .social__item:nth-child(1):hover .social__item_video {
+        display: grid; }
+    .social__item:nth-child(2) {
+      grid-column: span 1;
+      background-image: url("../../img/social/1.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(2) {
+          grid-column: span 2; } }
+    .social__item:nth-child(3) {
+      grid-column: span 1;
+      background-image: url("../../img/social/2.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(3) {
+          grid-column: span 2; } }
+    .social__item:nth-child(4) {
+      grid-column: span 1;
+      background-image: url("../../img/social/3.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(4) {
+          grid-column: span 2; } }
+    .social__item:nth-child(5) {
+      grid-column: span 1;
+      background-image: url("../../img/social/4.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(5) {
+          grid-column: span 2; } }
+    .social__item:nth-child(6) {
+      grid-column: span 2;
+      background-image: url("../../img/social/v-2.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .social__item:nth-child(6) {
+          grid-column: span 4; } }
+      .social__item:nth-child(6):hover .social__item_video {
+        display: grid; }
+    .social__item_video {
+      display: none;
+      place-items: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-animation: show-btn 0.3s linear;
+              animation: show-btn 0.3s linear; }
+      .social__item_video:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.1)), to(rgba(51, 51, 51, 0.5)));
+        background: linear-gradient(to bottom, rgba(180, 180, 180, 0.1), rgba(51, 51, 51, 0.5));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+      .social__item_video button {
+        position: relative;
+        z-index: 10;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer; }
+
+@-webkit-keyframes show-btn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes show-btn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 /*# sourceMappingURL=main.css.map */
