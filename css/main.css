@@ -947,7 +947,7 @@ h2 {
     background-repeat: no-repeat; }
     .social__item:nth-child(1) {
       grid-column: span 2;
-      background-image: url("../../img/social/v-1.jpg"); }
+      background-image: url("../img/social/v-1.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(1) {
           grid-column: span 4; } }
@@ -955,31 +955,31 @@ h2 {
         display: grid; }
     .social__item:nth-child(2) {
       grid-column: span 1;
-      background-image: url("../../img/social/1.jpg"); }
+      background-image: url("../img/social/1.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(2) {
           grid-column: span 2; } }
     .social__item:nth-child(3) {
       grid-column: span 1;
-      background-image: url("../../img/social/2.jpg"); }
+      background-image: url("../img/social/2.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(3) {
           grid-column: span 2; } }
     .social__item:nth-child(4) {
       grid-column: span 1;
-      background-image: url("../../img/social/3.jpg"); }
+      background-image: url("../img/social/3.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(4) {
           grid-column: span 2; } }
     .social__item:nth-child(5) {
       grid-column: span 1;
-      background-image: url("../../img/social/4.jpg"); }
+      background-image: url("../img/social/4.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(5) {
           grid-column: span 2; } }
     .social__item:nth-child(6) {
       grid-column: span 2;
-      background-image: url("../../img/social/v-2.jpg"); }
+      background-image: url("../img/social/v-2.jpg"); }
       @media only screen and (max-width: 768px) {
         .social__item:nth-child(6) {
           grid-column: span 4; } }
