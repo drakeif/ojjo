@@ -191,6 +191,8 @@ h2 {
   min-width: 32rem;
   margin: 0 auto;
   padding: 0 1.5rem; }
+  .container.container--small {
+    max-width: 80rem; }
 
 .header {
   padding: 2.5rem 0;
@@ -1028,5 +1030,150 @@ h2 {
     opacity: 0; }
   to {
     opacity: 1; } }
+.mailing {
+  padding: 10rem 0;
+  background-image: url("../../img/our_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 768px) {
+    .mailing {
+      padding: 6rem 0; } }
+  @media only screen and (max-width: 500px) {
+    .mailing {
+      padding: 3rem 0; } }
+  .mailing__title {
+    text-align: center;
+    margin-bottom: 6rem; }
+    @media only screen and (max-width: 768px) {
+      .mailing__title {
+        margin-bottom: 3rem; } }
+    .mailing__title h3 {
+      font-size: 2.1rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 768px) {
+        .mailing__title h3 {
+          font-size: 1.6rem;
+          margin-bottom: .5rem; } }
+  .mailing__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .mailing__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 5rem; } }
+    @media only screen and (max-width: 500px) {
+      .mailing__content {
+        row-gap: 3rem; } }
+  .mailing__left ul {
+    list-style: none;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400; }
+    @media only screen and (max-width: 500px) {
+      .mailing__left ul {
+        font-size: 1.4rem; } }
+    .mailing__left ul li {
+      position: relative;
+      padding-left: 3.5rem; }
+      .mailing__left ul li:before {
+        content: '';
+        display: block;
+        width: 1.7rem;
+        height: 1.7rem;
+        background-image: url("../img/subscribe__icon.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0; }
+    .mailing__left ul li:not(:last-child) {
+      margin-bottom: 1.5rem; }
+  .mailing__input {
+    padding: 1rem;
+    border: 0.1rem solid #ffffff; }
+    @media only screen and (max-width: 500px) {
+      .mailing__input {
+        padding: .5rem; } }
+    .mailing__input form {
+      padding: 2rem;
+      background: #ffffff; }
+      @media only screen and (max-width: 500px) {
+        .mailing__input form {
+          padding: .5rem; } }
+      .mailing__input form input {
+        width: 20rem;
+        height: 4.5rem;
+        padding-left: 2rem;
+        border: 0.1rem solid #b4b4b4;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400; }
+        .mailing__input form input::-webkit-input-placeholder {
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.4rem;
+          font-weight: 300;
+          letter-spacing: .1rem;
+          color: #b4b4b4; }
+        .mailing__input form input:-ms-input-placeholder {
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.4rem;
+          font-weight: 300;
+          letter-spacing: .1rem;
+          color: #b4b4b4; }
+        .mailing__input form input::-ms-input-placeholder {
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.4rem;
+          font-weight: 300;
+          letter-spacing: .1rem;
+          color: #b4b4b4; }
+        .mailing__input form input::placeholder {
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.4rem;
+          font-weight: 300;
+          letter-spacing: .1rem;
+          color: #b4b4b4; }
+        @media only screen and (max-width: 500px) {
+          .mailing__input form input {
+            width: 100%;
+            margin-bottom: 0.5rem; } }
+      .mailing__input form button {
+        width: 15rem;
+        height: 4.5rem;
+        background: #333333;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 300;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: 0.2s linear;
+        transition: 0.2s linear; }
+        .mailing__input form button:hover {
+          background: #4d4d4d; }
+        @media only screen and (max-width: 500px) {
+          .mailing__input form button {
+            width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -48,6 +48,9 @@ h2 {
     min-width: 32rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+    &.container--small {
+        max-width: 80rem;
+    }
 }
 // MODULES
 @import 'modules/header';
@@ -56,3 +59,4 @@ h2 {
 @import 'modules/our';
 @import 'modules/blog';
 @import 'modules/social';
+@import 'modules/mailing';
