@@ -1,6 +1,6 @@
 .mailing {
     padding: 10rem 0;
-    background-image: url('../../img/our_bg.jpg');
+    background-image: url('../img/our_bg.jpg');
     @include bg;
     @include point(768) {
         padding: 6rem 0;

@@ -1032,7 +1032,7 @@ h2 {
     opacity: 1; } }
 .mailing {
   padding: 10rem 0;
-  background-image: url("../../img/our_bg.jpg");
+  background-image: url("../img/our_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
